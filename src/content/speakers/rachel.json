@@ -1,0 +1,11 @@
+{
+	"name": "Rachel WingMan",
+	"title": "CEO at Rachel Wingman Group, Triple Happiness Coach",
+	"image": "../../assets/rachel.jpg",
+	"links": {
+		"website": "https://rachelwm.com.au/",
+		"linkedin": "https://linkedin.com/in/rachelwingman"
+	},
+	"featured": true,
+	"order": 4
+}

@@ -1,0 +1,51 @@
+---
+import { Picture } from "astro:assets";
+import { Icon } from "astro-icon/components";
+import chooseJoyImage from "../assets/choose-joy.png";
+
+import CountdownTimer from "./CountdownTimer.astro";
+import { HeroTextEffect } from "./HeroTextEffect";
+---
+
+<div class="hero min-h-screen">
+  <div class="container mx-auto hero-content flex-col lg:flex-row @container">
+    <div class="grid grid-cols-1 gap-8">
+      <HeroTextEffect client:load />
+      <!-- <CountdownTimer client:load /> -->
+
+      <!-- <h1 class="text-6xl md:text-8xl font-heading">PAUSE</h1> -->
+      <!-- <h1 class="text-6xl md:text-8xl font-heading">2025</h1> -->
+
+      <p class="py-4 text-base-content/75">
+        We're empowering leaders to create healthier, more resilient workplaces
+        by integrating wellness strategies, understanding WHS compliance and
+        adopting leadership practices suitable for the AI age
+      </p>
+
+      <div class="grid sm:grid-cols-2 grid-cols-1 gap-2 items-center">
+        <div>
+          <h2 class="text-xl md:text-3xl font-semibold text-base-content/50">
+            Friday 28th of March, 2025
+          </h2>
+        </div>
+        <div class="pt-4 sm:pt-0">
+          <a
+            role="button"
+            class="btn btn-accent rounded-full px-8 gap-2 transform transition-all hover:scale-105 hover:shadow-lg"
+            href="https://events.humanitix.com/pause-lclbenvj"
+            target="_blank"
+          >
+            <Icon name="mdi:ticket-confirmation" class="w-6 h-6" />
+            Get Tickets
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <Picture
+      class="lg:flex place-self-center max-w-md rounded-3xl border border-primary hidden"
+      src={chooseJoyImage}
+      alt="choose joy image"
+    />
+  </div>
+</div>

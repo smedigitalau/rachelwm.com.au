@@ -1,0 +1,447 @@
+---
+import { Picture } from "astro:assets";
+import anthonyHartcherImage from "../assets/anthony-hartcher.jpg";
+import bronwynWilliamsImage from "../assets/bronwyn-williams.jpg";
+import dougDownerImage from "../assets/doug-downer.jpg";
+import suzyGreenImage from "../assets/dr-suzy-green.jpg";
+import maddyDanzeyImage from "../assets/maddy-danzey.jpg";
+import rachelImage from "../assets/rachel.jpg";
+---
+
+<div class="rounded-t-4xl">
+  <section id="agenda" class="pb-24 container mx-auto md:px-4">
+    <div class="rounded-2xl px-4 py-24 bg-base-200 shadow-2xl">
+      <div class="text-center mb-4 md: mt-24 md:mb-16">
+        <h2 class="text-5xl md:text-6xl font-bold uppercase tracking-tight">
+          The Agenda
+        </h2>
+        <div class="h-1 w-24 bg-accent mx-auto mb-4"></div>
+      </div>
+
+      <div class="flex flex-col gap-8 pt-12">
+        <div class="flex w-full">
+          <div
+            class="flex justify-center md:w-1/5 text-accent uppercase text-md md:text-xl items-center px-4 font-semibold"
+          >
+            8:30am
+          </div>
+          <div class="flex-1 flex-col md:flex-row">
+            <div class="flex flex-col gap-2">
+              <div class="text-md md:text-xl font-semibold">Registration</div>
+              <div class="text-base-content/65">
+                Registration Coffee and Tea. Connect with attendees. Ice
+                breaking activities. Plus, Attendees receive a branded wellness
+                kit that includes mindfulness cards, stress balls and
+                wellness-focused items contributed by sponsors
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex w-full">
+          <div
+            class="flex justify-center md:w-1/5 text-accent uppercase text-md md:text-xl items-center px-4 font-semibold stretc"
+          >
+            9:00am
+          </div>
+          <div class="flex-1 flex-col md:flex-row">
+            <div class="flex flex-col gap-2">
+              <div class="text-md md:text-xl font-semibold">Welcome</div>
+
+              <div class="text-base-content/65">
+                About Pause, Our Community, Thank You to Our Supporters, House
+                Keeping
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex w-full">
+          <div
+            class="flex justify-center md:w-1/5 text-accent uppercase text-md md:text-xl items-center px-4 font-semibold"
+          >
+            9:10am
+          </div>
+
+          <div class="flex space-x-2 flex-col md:flex-row">
+            <!-- First column (aligned to middle) -->
+            <div class="flex items-center">
+              <div class="avatar">
+                <div class="w-16 rounded-full">
+                  <Picture src={rachelImage} alt="rwm" />
+                </div>
+              </div>
+            </div>
+
+            <div class="flex items-center">
+              <div class="text-md md:text-xl font-semibold">
+                Rachel WingMan 'Pause' Story
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex w-full">
+          <div
+            class="flex justify-center md:w-1/5 text-accent uppercase text-md md:text-xl items-center px-4 font-semibold"
+          >
+            9:20am
+          </div>
+          <div class="flex-1 flex-col md:flex-row">
+            <div class="flex flex-col gap-2">
+              <div class="text-md md:text-xl font-semibold">
+                Pause to Lead Better
+              </div>
+              <div class="text-base-content/65">
+                Leadership in the AI Age: Integrating Wellness and Technology
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex w-full">
+          <div
+            class="flex justify-center md:w-1/5 text-accent uppercase text-md md:text-xl items-center px-4 font-semibold"
+          >
+            9:30am
+          </div>
+
+          <div class="flex space-x-2">
+            <div class="flex items-center">
+              <div class="avatar">
+                <div class="w-16 rounded-full">
+                  <Picture src={suzyGreenImage} alt="suzy" />
+                </div>
+              </div>
+            </div>
+
+            <div class="flex flex-col">
+              <div class="text-md md:text-xl font-semibold">
+                Opening: Leading with Positivity
+              </div>
+              <div class="text-base-content/65">
+                Embedding Wellbeing Science into Leadership with Dr. Suzy Green
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex w-full">
+          <div
+            class="flex justify-center md:w-1/5 text-accent uppercase text-md md:text-xl items-center px-4 font-semibold"
+          >
+            10:00am
+          </div>
+
+          <div class="flex space-x-2">
+            <div class="flex items-center">
+              <div class="avatar-group -space-x-6">
+                <div class="avatar">
+                  <div class="w-16 rounded-full">
+                    <Picture
+                      src={dougDownerImage}
+                      alt="doug"
+                      layout="responsive"
+                    />
+                  </div>
+                </div>
+                <div class="avatar avatar-ghost">
+                  <div class="bg-base-200 w-16 rounded-full">
+                    <Picture
+                      src={bronwynWilliamsImage}
+                      alt="BW"
+                      layout="responsive"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex flex-col">
+              <div class="text-md md:text-xl font-semibold">
+                Panel Discussion: Empowering Teams Through Wellness and
+                Compliance
+              </div>
+              <div class="text-base-content/65 max-w-2xl">
+                Learn practical strategies to foster well-being, educate teams
+                on workplace safety, and ensure compliance while building trust
+                and collaboration. Speakers: Doug Downer, Bronwyn Williams
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex w-full glass shadow-sm py-8 rounded-xl">
+          <div
+            class="flex justify-center md:w-1/5 text-accent uppercase text-md md:text-xl items-center font-semibold px-4"
+          >
+            10:30am
+          </div>
+          <div class="flex-1 flex-col md:flex-row">
+            <div class="flex flex-col">
+              <div
+                class="uppercase text-md md:text-xl text-center justify-center"
+              >
+                Morning Tea and Networking
+              </div>
+              <div class="text-xl"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex w-full">
+          <div
+            class="flex justify-center md:w-1/5 text-accent uppercase text-md md:text-xl items-center px-4 font-semibold"
+          >
+            10:50am
+          </div>
+          <div class="flex-1 flex-col md:flex-row">
+            <div class="flex flex-col gap-2">
+              <div class="text-md md:text-xl font-semibold">
+                Breakout Session: The "Pause to Lead" Series (Session One)
+              </div>
+              <article class="prose">
+                <div class="text-base-content/65">
+                  Choose from three exciting wellness practices and topics.
+                  <ul>
+                    <li>
+                      Session 1: Refine Your Inner-Edge System: Unlocking Your
+                      Superpowers for Wellbeing
+                    </li>
+                    <li>Session 2: Social Connections Bingo</li>
+
+                    <li>Session 3: Desk Detox: Stretch & Strength</li>
+                  </ul>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex w-full">
+          <div
+            class="flex justify-center md:w-1/5 text-accent uppercase text-md md:text-xl items-center px-4 font-semibold"
+          >
+            11:15am
+          </div>
+          <div class="flex-1 flex-col md:flex-row">
+            <div class="flex flex-col gap-2">
+              <div class="text-md md:text-xl font-semibold">
+                Client Fireside Chat: with Dorris Li
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex w-full">
+          <div
+            class="flex justify-center md:w-1/5 text-accent uppercase text-md md:text-xl items-center px-4 font-semibold"
+          >
+            11:40am
+          </div>
+
+          <div class="flex space-x-2 flex-col md:flex-row">
+            <div class="flex items-center justify-center md:justify-start">
+              <div class="avatar">
+                <div class="w-16 rounded-full">
+                  <Picture
+                    src={maddyDanzeyImage}
+                    alt="suzy"
+                    layout="responsive"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="flex flex-col">
+              <div class="text-md md:text-xl font-semibold">
+                The 22-Hour Per Week Problem
+              </div>
+              <div class="text-base-content/65">
+                What 512 Executives Told Us About Leadership—And How HR Can Fix
+                It with Maddy Danzey
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex w-full glass shadow-sm py-8 rounded-xl">
+          <div
+            class="flex justify-center md:w-1/5 text-accent uppercase text-md md:text-xl items-center font-semibold px-4"
+          >
+            12:10pm
+          </div>
+          <div class="flex-1 flex-col md:flex-row">
+            <div class="flex flex-col">
+              <div
+                class="uppercase text-md md:text-xl text-center justify-center"
+              >
+                Lunch & Sponsor Showcase
+              </div>
+              <div class="text-xl"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex w-full">
+          <div
+            class="flex justify-center md:w-1/5 text-accent uppercase text-md md:text-xl items-center px-4 font-semibold"
+          >
+            1:00pm
+          </div>
+
+          <div class="flex space-x-2 flex-col md:flex-row">
+            <div class="flex items-center justify-center md:justify-start">
+              <div class="avatar">
+                <div class="w-16 rounded-full">
+                  <Picture
+                    src={anthonyHartcherImage}
+                    alt="suzy"
+                    layout="responsive"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="flex flex-col">
+              <div class="text-md md:text-xl font-semibold">
+                Nourishing Synergy
+              </div>
+              <div class="text-base-content/65">
+                How Nutrition and Sunlight Fuels Collaboration and Team Success
+                with Anthony Hartcher
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex w-full">
+          <div
+            class="flex justify-center md:w-1/5 text-accent uppercase text-md md:text-xl items-center px-4 font-semibold"
+          >
+            1:30pm
+          </div>
+          <div class="flex-1 flex-col md:flex-row">
+            <div class="flex flex-col gap-2">
+              <div class="text-md md:text-xl font-semibold">
+                Breakout Session: The "Pause to Lead" Series (Session Two)
+              </div>
+              <article class="prose">
+                <div class="text-base-content/65">
+                  Choose from three exciting wellness practices and topics.
+                  <ul>
+                    <li>Session 1: Breathwork & Sound Escapes</li>
+
+                    <li>
+                      Session 2: Understanding Mental Wellbeing - An interactive
+                      session looking at what is mental wellbeing, signs,
+                      stigma, and strategies. Hosted by Peter Casbolt
+                    </li>
+                  </ul>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex w-full">
+          <div
+            class="flex justify-center md:w-1/5 text-accent uppercase text-md md:text-xl items-center px-4 font-semibold"
+          >
+            1:50pm
+          </div>
+          <div class="flex-1 flex-col md:flex-row">
+            <div class="flex flex-col gap-2">
+              <div class="text-md md:text-xl font-semibold">
+                Closing Q&A: Pause to Thrive: Embedding Wellness in Leadership
+              </div>
+              <div class="text-base-content/65">
+                Emphasizing how intentional pauses and self-care can lead to
+                long-term success and resilience for leaders.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex w-full">
+          <div
+            class="flex justify-center md:w-1/5 text-accent uppercase text-md md:text-xl items-center px-4 font-semibold"
+          >
+            2:30pm
+          </div>
+          <div class="flex-1 flex-col md:flex-row">
+            <div class="flex flex-col gap-2">
+              <div class="text-md md:text-xl font-semibold">Audience Q&A</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex w-full">
+          <div
+            class="flex justify-center md:w-1/5 text-accent uppercase text-md md:text-xl items-center px-4 font-semibold"
+          >
+            3:00pm
+          </div>
+          <div class="flex-1 flex-col md:flex-row">
+            <div class="flex flex-col gap-2">
+              <div class="text-md md:text-xl font-semibold">
+                End of Day Reflection and Giveaways
+              </div>
+              <div class="text-base-content/65">
+                Attendees reflect on their takeaways and set intentions for
+                future leadership self-care practices. (Share reflection)
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex w-full glass shadow-sm py-8 rounded-xl">
+          <div
+            class="flex justify-center md:w-1/5 text-accent uppercase text-md md:text-xl items-center font-semibold px-4"
+          >
+            3:30pm
+          </div>
+          <div class="flex-1 flex-col md:flex-row">
+            <div class="flex flex-col">
+              <div
+                class="uppercase text-md md:text-xl text-center justify-center"
+              >
+                Afternoon Tea and Networking
+              </div>
+              <div class="text-xl"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex w-full">
+          <div
+            class="flex justify-center md:w-1/5 text-accent uppercase text-md md:text-xl items-center px-4 font-semibold"
+          >
+            4:00pm
+          </div>
+          <div class="flex-1 flex-col md:flex-row">
+            <div class="flex flex-col gap-2">
+              <div class="text-md md:text-xl font-semibold">
+                Connecting and Drinks
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex w-full">
+          <div
+            class="flex justify-center md:w-1/5 text-accent uppercase text-md md:text-xl items-center px-4 font-semibold"
+          >
+            4:30pm
+          </div>
+          <div class="flex-1 flex-col md:flex-row">
+            <div class="flex flex-col gap-2">
+              <div class="text-md md:text-xl font-semibold">Event Ends</div>
+              <div class=""></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

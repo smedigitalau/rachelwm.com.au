@@ -1,0 +1,65 @@
+---
+// CountdownTimer.astro
+// Make sure you have DaisyUI installed in your Astro project:
+// npm install daisyui
+---
+
+<div class="flex gap-5 text-base-content/50">
+  <div>
+    <span class="countdown font-mono text-xl text-base-content/50" id="days">
+      <span style="--value:0;"></span>
+    </span>
+    days
+  </div>
+  <div>
+    <span class="countdown font-mono text-xl" id="hours">
+      <span style="--value:0;"></span>
+    </span>
+    hours
+  </div>
+  <div>
+    <span class="countdown font-mono text-xl" id="minutes">
+      <span style="--value:0;"></span>
+    </span>
+    min
+  </div>
+</div>
+
+<script>
+  // Set the date we're counting down to
+  const targetDate = new Date("March 28, 2025 08:30:00").getTime();
+
+  // Update the countdown every 1 second
+  const countdownTimer = setInterval(function () {
+    // Get current date and time
+    const now = new Date().getTime();
+
+    // Find the distance between now and the target date
+    const distance = targetDate - now;
+
+    // Calculate time units
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor(
+      (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60),
+    );
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    // Update the countdown display using DaisyUI's countdown component
+    document.querySelector("#days span").style.setProperty("--value", days);
+    document.querySelector("#hours span").style.setProperty("--value", hours);
+    document
+      .querySelector("#minutes span")
+      .style.setProperty("--value", minutes);
+    document
+      .querySelector("#seconds span")
+      .style.setProperty("--value", seconds);
+
+    // If the countdown is over, display a message
+    if (distance < 0) {
+      clearInterval(countdownTimer);
+      document.querySelector(".grid").innerHTML =
+        "<div class='text-2xl font-bold'>The time has arrived!</div>";
+    }
+  }, 1000);
+</script>

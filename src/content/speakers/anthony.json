@@ -1,0 +1,11 @@
+{
+	"name": "Anthony Hartcher",
+	"title": "Joyful Journey Mentor",
+	"image": "../../assets/anthony-hartcher.jpg",
+	"links": {
+		"website": "https://meandmywellness.com.au/",
+		"linkedin": "https://linkedin.com/in/anthony-hartcher"
+	},
+	"featured": true,
+	"order": 2
+}

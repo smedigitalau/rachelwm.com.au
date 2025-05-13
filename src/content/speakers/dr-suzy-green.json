@@ -1,0 +1,12 @@
+{
+	"name": "Dr. Suzy Green",
+	"title": "CEO & Founder at The Positivity Institute",
+	"image": "../../assets/dr-suzy-green.jpg",
+	"links": {
+		"website": "https://thepositivityinstitute.com.au",
+		"linkedin": "https://linkedin.com/in/dr-suzy-green"
+	},
+	"featured": true,
+	"role": "Keynote Speaker",
+	"order": 1
+}

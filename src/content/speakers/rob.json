@@ -1,0 +1,11 @@
+{
+	"name": "Rob McDonald",
+	"title": "Owner and Managing Director at GSD Safety",
+	"image": "../../assets/rob.jpg",
+	"links": {
+		"website": "https://gsdsafety.com.au/",
+		"linkedin": "https://www.linkedin.com/in/robmcdonald-safety-risk-consulting-compliance/"
+	},
+	"featured": true,
+	"order": 8
+}

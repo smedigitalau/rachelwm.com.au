@@ -1,0 +1,98 @@
+---
+import { Picture } from "astro:assets";
+import eyobLogo from "../assets/logo-eyob.jpg";
+
+import { Icon } from "astro-icon/components";
+---
+
+<section id="partner">
+  <div
+    class="min-h-screen bg-gradient-to-br from-base-100 to-base-200 py-24 px-4 sm:px-6 lg:px-8"
+  >
+    <!-- Hero Section -->
+    <article class="prose lg:prose-xl text-center mb-16 max-w-4xl mx-auto">
+      <h2 class="text-5xl md:text-7xl font-bold mb-4 uppercase tracking-wide">
+        Want to Partner with Pause 2025?
+      </h2>
+      <p class="text-xl text-base-content/75">
+        Contact our dedicated events team today to explore opportunities
+      </p>
+    </article>
+
+    <!-- Card Container -->
+    <div class="card lg:card-side bg-base-100 shadow-xl max-w-6xl mx-auto">
+      <!-- Left Column (Image) -->
+      <figure
+        class="lg:w-1/2 bg-accent/10 p-8 flex items-center justify-center"
+      >
+        <Picture
+          src={eyobLogo}
+          alt="Icon Corporate Events Logo"
+          class="w-full"
+        />
+      </figure>
+
+      <!-- Right Column (Content) -->
+      <div class="card-body lg:w-1/2 p-8 space-y-6">
+        <h2 class="card-title text-3xl mb-4">Icon Corporate Events</h2>
+
+        <blockquote
+          class="text-lg italic border-l-4 border-accent pl-4 text-base-content/75"
+        >
+          “Deliver Experiences that Connect People, Build Communities and
+          Support them on their Mission”
+        </blockquote>
+
+        <!-- Contact Info Grid -->
+        <div class="space-y-4">
+          <!-- Phone -->
+          <div
+            class="flex items-center gap-4 hover:bg-base-200/50 p-3 rounded-lg transition-all"
+          >
+            <Icon name="mdi:phone" class="w-6 h-6 text-accent shrink-0" />
+            <a href="tel:0450582080" class="link-hover text-lg">0450 582 080</a>
+          </div>
+
+          <!-- Email -->
+          <div
+            class="flex items-center gap-4 hover:bg-base-200/50 p-3 rounded-lg transition-all"
+          >
+            <Icon name="mdi:email" class="w-6 h-6 text-accent shrink-0" />
+            <a href="mailto:info@iconcorpevents.com" class="link-hover text-lg"
+              >info@iconcorpevents.com</a
+            >
+          </div>
+
+          <!-- Website -->
+          <div
+            class="flex items-center gap-4 hover:bg-base-200/50 p-3 rounded-lg transition-all"
+          >
+            <Icon
+              name="mdi:external-link"
+              class="w-6 h-6 text-accent shrink-0"
+            />
+            <a
+              href="https://www.iconcorpevents.com"
+              target="_blank"
+              class="link-hover text-lg"
+            >
+              iconcorpevents.com
+            </a>
+          </div>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="flex flex-col sm:flex-row gap-4 mt-8">
+          <a
+            role="button"
+            class="btn btn-accent btn-lg flex-1 gap-2"
+            href="mailto:info@iconcorpevents.com"
+          >
+            <Icon name="mdi:handshake-outline" class="w-6 h-6" />
+            Partner Inquiry
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

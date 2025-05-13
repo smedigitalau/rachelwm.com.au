@@ -1,0 +1,11 @@
+{
+	"name": "Maddy Danzey",
+	"title": "CEO at Manager Pro",
+	"image": "../../assets/maddy-danzey.jpg",
+	"links": {
+		"website": "https://managerpro.online",
+		"linkedin": "https://linkedin.com/in/maddydanzey"
+	},
+	"featured": true,
+	"order": 3
+}

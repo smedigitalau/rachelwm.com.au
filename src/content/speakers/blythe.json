@@ -1,0 +1,12 @@
+{
+	"name": "Blythe Murphy",
+	"title": "CEO at The Balanced Agenda",
+	"image": "../../assets/blythe.jpg",
+	"links": {
+		"website": "https://thebalancedagenda.com/",
+		"linkedin": "https://www.linkedin.com/in/blythe-emily-murphy"
+	},
+	"featured": true,
+	"role": "MC",
+	"order": 2
+}

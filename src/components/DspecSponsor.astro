@@ -1,0 +1,83 @@
+---
+import { Picture } from "astro:assets";
+import { Icon } from "astro-icon/components";
+import dspecLogo from "../assets/logo-dspec.png";
+---
+
+<section id="dspec" class="rounded-t-4xl">
+  <div class="hero min-h-screen bg-gradient-to-br from-base-200 to-base-300/50">
+    <div
+      class="hero-content flex-col lg:flex-row-reverse gap-16 max-w-7xl px-8 py-24"
+    >
+      {/* Image Section */}
+      <div class="relative lg:w-1/2 group">
+        <div class="relative rounded-2xl overflow-hidden">
+          <Picture
+            src={dspecLogo}
+            class="w-full h-auto transition-all duration-500 group-hover:scale-105"
+            alt="DSPEC Team Building Experience"
+          />
+        </div>
+      </div>
+
+      {/* Content Section */}
+      <div class="lg:w-1/2 space-y-8 text-center lg:text-left">
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
+          <span class=""> WIN a DSPEC Team-Building </span>
+          <br />
+          <span class="text-base-content">Drone Experience</span>
+        </h1>
+
+        <div class="space-y-6">
+          <p class="text-lg md:text-xl text-base-content/75 font-semibold">
+            Book PAUSE 2025 Today for a Chance to Win an Exclusive Team-Building
+            Drone Experience!
+          </p>
+
+          <div class="h-1 w-24 bg-accent mx-auto lg:mx-0"></div>
+
+          <p class="text-base md:text-lg text-base-content/80">
+            Elevate your team in 2025 with DSPEC’s cutting-edge drone
+            activities! Designed to boost collaboration, communication, and
+            problem-solving, this 90-minute session for you and 10 employees
+            blends technology with high-energy fun. Don’t miss your shot at an
+            unforgettable team-building adventure. Secure your spot today!
+          </p>
+
+          <ul class="grid grid-cols-1 md:grid-cols-2 gap-4 text-start">
+            <li class="flex items-center gap-3">
+              <Icon name="mdi:check-circle" class="w-6 h-6 text-accent" />
+              <span class="font-medium">Boost Collaboration </span>
+            </li>
+            <li class="flex items-center gap-3">
+              <Icon name="mdi:check-circle" class="w-6 h-6 text-accent" />
+              <span class="font-medium">Strategic Problem-Solving</span>
+            </li>
+            <li class="flex items-center gap-3">
+              <Icon name="mdi:check-circle" class="w-6 h-6 text-accent" />
+              <span class="font-medium">Boost Communication</span>
+            </li>
+            <li class="flex items-center gap-3">
+              <Icon name="mdi:check-circle" class="w-6 h-6 text-accent" />
+              <span class="font-medium">High-Energy Fun</span>
+            </li>
+          </ul>
+        </div>
+
+        <div
+          class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
+        >
+          <a
+            role="button"
+            class="btn btn-accent btn-lg rounded-full px-8 gap-2 transform transition-all hover:scale-105 hover:shadow-lg"
+            href="https://events.humanitix.com/pause-lclbenvj"
+            target="_blank"
+          >
+            <Icon name="mdi:ticket-confirmation" class="w-6 h-6" />
+            Get Tickets
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

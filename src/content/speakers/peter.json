@@ -1,0 +1,11 @@
+{
+	"name": "Peter Casbolt",
+	"title": "Casbolt Consultancy",
+	"image": "../../assets/peter-casbolt.jpg",
+	"links": {
+		"website": "https://www.petercasbolt.com",
+		"linkedin": "https://www.linkedin.com/in/peter-casbolt-26082a26/"
+	},
+	"featured": true,
+	"order": 8
+}

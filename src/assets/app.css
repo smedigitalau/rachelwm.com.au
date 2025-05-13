@@ -1,0 +1,88 @@
+@import "@fontsource-variable/inter";
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+@plugin "daisyui" {
+	themes: emerald, sunset --default --prefersdark;
+	logs: false;
+}
+
+@plugin "daisyui/theme" {
+	name: "pausesummit";
+	default: true;
+	prefersdark: true;
+	color-scheme: "dark";
+	/* --color-base-100: #f7f7f7; */
+	--color-base-100: #0e3746;
+	/* --color-base-200: #264b58; */
+	/* --color-base-200: #0a2833; */
+	--color-base-200: #0c2e3a;
+	--color-base-300: #3e5e6a;
+	/* --color-base-content: #0e3746; */
+	--color-base-content: #f4f2ec;
+	/* --color-base-content: #f7f7f7; */
+	--color-primary: #0e3746;
+	--color-primary-content: #f7f7f7;
+	--color-secondary: #cb697f;
+	--color-secondary-content: #f7f7f7;
+	--color-accent: #ffff9b;
+	--color-accent-content: #0e3746;
+	--color-neutral: #f7f7f7;
+	--color-neutral-content: #f7f7f7;
+	--color-info: oklch(74% 0.16 232.661);
+	--color-info-content: oklch(29% 0.066 243.157);
+	--color-success: oklch(76% 0.177 163.223);
+	--color-success-content: oklch(37% 0.077 168.94);
+	--color-warning: oklch(82% 0.189 84.429);
+	--color-warning-content: oklch(41% 0.112 45.904);
+	--color-error: oklch(71% 0.194 13.428);
+	--color-error-content: oklch(27% 0.105 12.094);
+	--radius-selector: 0.5rem;
+	--radius-field: 0.25rem;
+	--radius-box: 0.25rem;
+	--size-selector: 0.25rem;
+	--size-field: 0.25rem;
+	--border: 1.5px;
+	--depth: 1;
+	--noise: 0;
+}
+
+html {
+	font-size: 18px;
+}
+
+/* Register your custom font family and tell the browser where to find it. */
+@font-face {
+	font-family: "tan-regular";
+	src: url("/fonts/tan-regular.woff2") format("woff2");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+/* @font-face { */
+/*   font-family: "nourd-regular"; */
+/*   src: url("/fonts/nourd_regular.woff2") format("woff2"); */
+/*   font-weight: normal; */
+/*   font-style: normal; */
+/*   font-display: swap; */
+/* } */
+/**/
+/* @font-face { */
+/*   font-family: "nourd-bold"; */
+/*   src: url("/fonts/nourd_bold.woff2") format("woff2"); */
+/*   font-weight: bold; */
+/*   font-style: normal; */
+/*   font-display: swap; */
+/* } */
+
+@theme {
+	/* --font-sans: "nourd-regular", "sans-serif"; */
+	--font-sans: "Inter Variable", "sans-serif";
+	--font-heading: "tan-regular", "sans-serif";
+}
+
+.full-bleed {
+	width: 100vw;
+	margin-left: calc(50% - 50vw);
+	margin-right: calc(50% - 50vw);
+}

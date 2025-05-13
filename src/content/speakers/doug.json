@@ -1,0 +1,10 @@
+{
+	"name": "Doug Downer",
+	"title": "The Franchise Guy",
+	"image": "../../assets/doug-downer.jpg",
+	"links": {
+		"linkedin": "https://linkedin.com/in/franchising-consultant"
+	},
+	"featured": true,
+	"order": 5
+}

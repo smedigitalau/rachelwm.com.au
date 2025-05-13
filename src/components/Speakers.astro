@@ -1,0 +1,46 @@
+---
+import { Picture } from "astro:assets";
+import { Icon } from "astro-icon/components";
+import anthonyHartcherImage from "../assets/anthony-hartcher.jpg";
+import bronwynWilliamsImage from "../assets/bronwyn-williams.jpg";
+import dougDownerImage from "../assets/doug-downer.jpg";
+import suzyGreenImage from "../assets/dr-suzy-green.jpg";
+import maddyDanzeyImage from "../assets/maddy-danzey.jpg";
+import rachelImage from "../assets/rachel.jpg";
+
+import { getCollection } from "astro:content";
+
+const speakers = await getCollection("speakers");
+const sortedSpeakers = speakers.sort(
+  (a, b) => (a.data.order || 99) - (b.data.order || 99),
+);
+
+import SpeakerCard from "./SpeakerCard.astro";
+---
+
+<!-- <section id="speakers" class="container mx-auto py-24 bg-base-100"> -->
+<section
+  id="speakers"
+  class="py-12 md:py-48 bg-[#C7C7AD] text-base-100 rounded-t-4xl -mt-4"
+>
+  <div class="container mx-auto">
+    <div class="text-center mb-16">
+      <h2 class="text-5xl md:text-6xl font-bold mb-4 uppercase tracking-tight">
+        Meet Our
+        <br class="md:hidden" />
+        Distinguished Speakers
+      </h2>
+      <div class="h-1 w-24 bg-accent mx-auto mb-6"></div>
+      <p class="px-4 md:px-0 text-xl max-w-2xl mx-auto">
+        Learn from industry pioneers and thought leaders shaping the future of
+        workplace culture
+      </p>
+    </div>
+
+    <div
+      class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center gap-y-4 md:gap-x-2 px-2"
+    >
+      {sortedSpeakers.map((speaker) => <SpeakerCard speaker={speaker} />)}
+    </div>
+  </div>
+</section>

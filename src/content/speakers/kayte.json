@@ -1,0 +1,11 @@
+{
+	"name": "Kayte Lewis",
+	"title": "Founder and Director at Voice Lawyers",
+	"image": "../../assets/kayte.jpg",
+	"links": {
+		"website": "https://www.voicelawyers.com",
+		"linkedin": "https://www.linkedin.com/in/kayte-lewis/"
+	},
+	"featured": true,
+	"order": 7
+}

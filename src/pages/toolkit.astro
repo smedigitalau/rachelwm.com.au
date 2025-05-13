@@ -1,0 +1,119 @@
+---
+export const prerender = false;
+import { UserCard } from "@components/user-card";
+
+export const session = () => {
+    if (Astro.locals.session) {
+        // return Astro.locals.session;
+        return Astro.redirect("/login");
+    } else {
+        // Redirect to login page if the user is not authenticated
+        return Astro.redirect("/login");
+    }
+}
+
+import { db, Comment } from "astro:db";
+
+const comments = await db.select().from(Comment);
+import Layout from "../layouts/Layout.astro";
+
+
+import { actions } from "astro:actions";
+const result = Astro.getActionResult(actions.storeUserDetails);
+
+// const data = Astro.locals;
+
+import { Picture } from "astro:assets";
+import tkImage from "../assets/toolkit-image.png";
+
+
+
+// if (Astro.request.method === "POST") {
+//   try {
+//     const data = await Astro.request.formData();
+//     const name = data.get("username");
+//     const email = data.get("email");
+//     const password = data.get("password");
+//     // Do something with the data
+//   } catch (error) {
+//     if (error instanceof Error) {
+//       console.error(error.message);
+//     }
+//   }
+// }
+---
+
+<Layout>
+    <UserCard initialSession={session} />
+    <section id="toolkit" class="container px-2 min-h-3/4 items-center mx-auto">
+    <h1
+      class="pt-48 text-6xl uppercase justify-center font-semibold text-center text-base-content"
+    >
+      Leadership Toolkit
+    </h1>
+    <div class="py-12">
+      {
+        result ? (
+          <p class="text-2xl py-12 text-center">Welcome, {result.data} </p>
+      <div class="card bg-base-300/70 rounded-2xl w-full lg:w-1/2 px-2 shadow-sm md:shadow-xl mx-auto">
+  <figure>
+  <Picture
+  src={tkImage}
+  alt="toolkit image"
+            class="blur-lg"
+/>
+        </figure>
+  <div class="card-body">
+    <h2 class="card-title">Pause Leadership Toolkit</h2>
+          <p>Official Leadership Toolkit by Pause 2025 </p>
+    <div class="card-actions">
+<a href="/pause-leadership-toolkit.pdf" role="button" class="btn btn-accent btn-wide">Download Now</a>
+    </div>
+  </div>
+</div>
+        ) : (
+        <div class="flex justify-center items-center">
+    <div class="w-full max-w-md">
+          <form method="POST" action={actions.storeUserDetails}>
+            <fieldset class="fieldset w-full bg-base-200 border border-base-300 p-4 rounded-box">
+              <legend class="fieldset-legend">Details</legend>
+
+              <label class="fieldset-label">Name</label>
+              <input type="text" name="name" class="input w-full" placeholder="Name" />
+
+              <label class="fieldset-label">Email</label>
+
+              <label class="input validator w-full">
+                <svg
+                  class="h-[1em] opacity-50"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                >
+                  <g
+                    stroke-linejoin="round"
+                    stroke-linecap="round"
+                    stroke-width="2.5"
+                    fill="none"
+                    stroke="currentColor"
+                  >
+                    <>
+                      <rect width="20" height="16" x="2" y="4" rx="2" />
+                      <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                    </>
+                  </g>
+                </svg>
+                <input type="email" name="email" class="w-full" placeholder="Email" required />
+              </label>
+              <div class="validator-hint hidden">Enter valid email address</div>
+
+              <button class="btn btn-accent mt-4">Access Leadership Toolkit</button>
+            </fieldset>
+          </form>
+</div>
+</div>
+        )
+      }
+    </div>
+
+  </section>
+</Layout>
